@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Typescript",
+    "description": "Get the basics of Typescript",
+    "status": "COMPLETED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": "2026-02-02T10:00:00Z",
+    "completedAt": "2026-02-02T11:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Angular Components",
+    "description": "Create your first Angular component",
+    "status": "IN_PROGRESS",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": "2026-02-02T11:00:00Z",
+    "completedAt": null
+  },
+  {
+    "id": 3,
+    "title": "Angular SPA",
+    "description": "Architect a Single Page Application with Angular",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  }
+]
