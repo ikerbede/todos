@@ -54,6 +54,14 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Running linter
+
+To lint all projects with the [angular-eslint](https://github.com/angular-eslint/angular-eslint) builder, use the following command:
+
+```bash
+ng lint
+```
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
