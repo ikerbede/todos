@@ -1,1 +1,22 @@
-<h1>{{ title }}</h1>
+<h1>Liste de tâches</h1>
+<ul class="todos">
+  @for (todo of todos$ | async; track todo.id) {
+    <li class="todos-item">
+      <section class="todos-item-text">
+        <h2>{{ todo.title }}</h2>
+        <p>{{ todo.description }}</p>
+      </section>
+      @switch (todo.status) {
+        @case ('NOT_STARTED') {
+          <p class="todos-item-status not-started">Non commencé</p>
+        }
+        @case ('IN_PROGRESS') {
+          <p class="todos-item-status in-progress">En cours</p>
+        }
+        @case ('COMPLETED') {
+          <p class="todos-item-status completed">Terminé</p>
+        }
+      }
+    </li>
+  }
+</ul>

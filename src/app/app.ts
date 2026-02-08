@@ -1,10 +1,11 @@
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { getTodosByStatus } from './data-access/todos.service';
 import { TaskStatus } from './data-access/task';
+import { getTodosByStatus } from './data-access/todos.service';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [AsyncPipe],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
