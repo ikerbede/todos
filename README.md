@@ -1,67 +1,24 @@
-# Todos
+# Component Inputs/Outputs
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.2.
+## Consignes
 
-## Development server
+1. Ajouter un composant `todo-status` qui prendra en input un `TaskStatus` et affichera le libellé du statut de la tâche : "A faire", "En cours" ou "Terminée". Ce composant sera utilisé par le composant `todo` pour l'affichage du statut de la tâche.
+Utiliser un `Pipe` pour l'affichage du libellé. La couleur du texte et la couleur du fond seront adaptées au statut :
+   - `NOT_STARTED` : rouge foncé sur fond rouge clair
+   - `IN_PROGRESS` : orange foncé sur fond orange clair
+   - `COMPLETED` : vert foncé sur fond vert clair
+2. Ajouter un composant `todos` dédié à l'affichage de la liste de TODOs qui prendra en input une liste de tâches (`Task[]`). Ce composant réutilisera le composant `todo` créé dans l'exercice précédent pour afficher les différentes tâches. Utiliser ce composant dans le composant `app`.
+3. Ajouter dans le composant `todo` un bouton qui servira à faire évoluer le statut de la tâche : `IN_PROGRESS` si `NOT_STARTED` et `COMPLETED` si `IN_PROGRESS`. Le composant ne modifiera pas lui-même le statut de la tâche mais informera le composant parent (`todos`) du changement de statut.
+4. Ajouter un composant `filters` comprenant 4 boutons pour filtrer la liste des tâches affichées par statut : "Toutes", "A faire", "En cours" et "Terminées".
 
-To start a local development server, run:
+## Schéma d'architecture
 
-```bash
-ng serve
+Voici l'architecture de composants attendue dans cet exercice :
+
+```txt
+App
+  - Filters -> TaskStatus
+  - Todos <- Task[] 
+    - Todo <- Task -> statusChange
+      - TodoStatus <- TaskStatus
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Running linter
-
-To lint all projects with the [angular-eslint](https://github.com/angular-eslint/angular-eslint) builder, use the following command:
-
-```bash
-ng lint
-```
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
