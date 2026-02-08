@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { getTodosByStatus } from './data-access/todos.service';
+import { TaskStatus } from './data-access/task';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = 'Hello World';
+  todos$ = getTodosByStatus(TaskStatus.Completed);
 }
