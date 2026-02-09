@@ -1,8 +1,9 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
 <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
-<div class="todo" (click)="showDetails()" (keypress)="showDetails()">
+<div class="todo" (click)="showDetails()">
   <div class="todo-header">
     <h1>{{ task().title }}</h1>
-    <p>{{ task().status }}</p>
+    <app-todo-status [taskStatus]="task().status" />
   </div>
   @if (detailsDisplayed) {
     <p>{{ task().description }}</p>
