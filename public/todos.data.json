@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Typescript",
+    "description": "Get the basics of Typescript",
+    "status": "IN_PROGRESS",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": "2026-02-02T10:00:00Z",
+    "completedAt": null
+  },
+  {
+    "id": 2,
+    "title": "Angular CLI",
+    "description": "Generate a new Angular project",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  },
+  {
+    "id": 3,
+    "title": "Components",
+    "description": "Create my first component",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  },
+  {
+    "id": 4,
+    "title": "Data & event Binding",
+    "description": "Understand data and event binding in Angular",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  },
+  {
+    "id": 5,
+    "title": "Signals",
+    "description": "Manipulate Angular signals",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  },
+  {
+    "id": 6,
+    "title": "Component inputs & outputs",
+    "description": "Communicate between components using inputs and outputs",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  },
+  {
+    "id": 7,
+    "title": "Control flow",
+    "description": "Fit templates regarding data state",
+    "status": "NOT_STARTED",
+    "createdAt": "2026-02-01T15:00:00Z",
+    "startedAt": null,
+    "completedAt": null
+  }
+]
