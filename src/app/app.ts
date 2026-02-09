@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { getTodosByStatus } from './data-access/todos.service';
-import { TaskStatus } from './data-access/task';
+import { fetchTodos } from './data-access/todos.service';
+import { Todo } from './todo/todo';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [AsyncPipe, Todo],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  todos$ = getTodosByStatus(TaskStatus.Completed);
+  todos$ = fetchTodos();
 }

@@ -1,0 +1,18 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="todo" (click)="showDetails()" (keypress)="showDetails()">
+  <div class="todo-header">
+    <h1>{{ task().title }}</h1>
+    <p>{{ task().status }}</p>
+  </div>
+  @if (detailsDisplayed) {
+    <p>{{ task().description }}</p>
+    <p>
+      @if (task().status !== taskStatusEnum.NotStarted) {
+        {{ task().startedAt }}
+      } 
+      @if (task().status === taskStatusEnum.Completed) {
+        {{ task().completedAt }}
+      } 
+    </p>
+  }
+</div>
