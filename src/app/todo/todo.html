@@ -1,0 +1,20 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="todo" (click)="showDetails()">
+  <div class="todo-header">
+    <h1>{{ task().title }}</h1>
+    <app-todo-status [taskStatus]="task().status" />
+    <button (click)="updateTask($event)">UPDATE</button>
+  </div>
+  @if (detailsDisplayed) {
+    <p>{{ task().description }}</p>
+    <p>
+      @if (task().status !== taskStatusEnum.NotStarted) {
+        {{ task().startedAt }}
+      } 
+      @if (task().status === taskStatusEnum.Completed) {
+        {{ task().completedAt }}
+      } 
+    </p>
+  }
+</div>
