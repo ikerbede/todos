@@ -1,10 +1,17 @@
-# HttpClient
+# TODOs
 
-## Consignes
+## Description
 
-1. `npm i json-server`
-2. Créer un fichier `db.json` basé sur les ressources du fichier `todos.data.json`
-3. `npx json-server db.json`
-4. Remplacer la récupération des todos pour exécuter un appel **GET** à `http://localhost:3000/todos`
-5. Exécuter un appel **POST** à la soumission du formulaire de création d'une nouvelle tâche
-6. Exécuter un appel **PUT** à la mise à jour du statut d'une tâche
+Projet pédagogique d'initiation à Angular.
+
+## Branches
+
+- [unit-1/typescript](https://github.com/ikerbede/todos/tree/unit-1/typescript)
+- [unit-2/first-component](https://github.com/ikerbede/todos/tree/unit-2/first-component)
+- [unit-3/component-io](https://github.com/ikerbede/todos/tree/unit-3/component-io)
+- [solutions/unit-4/form](https://github.com/ikerbede/todos/tree/solutions/unit-4/form)
+- [unit-5/http-client](https://github.com/ikerbede/todos/tree/unit-5/http-client)
+
+## Stackblitz
+
+Le projet todos est également accessible et éditable en ligne via `Stackblitz` : [https://stackblitz.com/~/github.com/ikerbede/todos](https://stackblitz.com/~/github.com/ikerbede/todos)
