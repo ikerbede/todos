@@ -1,6 +1,7 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { Task, TaskStatus } from '../data-access/task';
 import { Todo } from '../todo/todo';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-todos',
@@ -9,9 +10,11 @@ import { Todo } from '../todo/todo';
   styleUrl: './todos.scss',
 })
 export class Todos {
+  private http = inject(HttpClient);
+
   tasks = input<Task[]>([]);
 
   updateTask(task: Task, updatedStatus: TaskStatus): void {
-    task.status = updatedStatus;
+    this.http.patch(`http://localhost:3000/todos/${task.id}`, { status: updatedStatus }).subscribe();
   }
 }
