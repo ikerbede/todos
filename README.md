@@ -9,7 +9,7 @@ Projet pédagogique d'initiation à Angular.
 - [unit-1/typescript](https://github.com/ikerbede/todos/tree/unit-1/typescript)
 - [unit-2/first-component](https://github.com/ikerbede/todos/tree/unit-2/first-component)
 - [unit-3/component-io](https://github.com/ikerbede/todos/tree/unit-3/component-io)
-- [solutions/unit-4/form](https://github.com/ikerbede/todos/tree/solutions/unit-4/form)
+- [unit-4/form](https://github.com/ikerbede/todos/tree/unit-4/form)
 - [unit-5/http-client](https://github.com/ikerbede/todos/tree/unit-5/http-client)
 
 ## Stackblitz
