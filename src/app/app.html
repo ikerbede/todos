@@ -1,3 +1,4 @@
-@if (todos$ | async; as todos) {
+<app-filters (filterChange)="filterTasks($event)" />
+@if (filteredTodos$ | async; as todos) {
   <app-todos [tasks]="todos" />
 }

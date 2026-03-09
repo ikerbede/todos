@@ -1,0 +1,6 @@
+<ul>
+  <li><button (click)="filterTasks()">Toutes</button></li>
+  <li><button (click)="filterTasks(taskStatusEnum.NotStarted)">A faire</button></li>
+  <li><button (click)="filterTasks(taskStatusEnum.InProgress)">En cours</button></li>
+  <li><button (click)="filterTasks(taskStatusEnum.Completed)">Terminées</button></li>
+</ul>

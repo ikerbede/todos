@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Task } from '../data-access/task';
+import { Task, TaskStatus } from '../data-access/task';
 import { Todo } from '../todo/todo';
 
 @Component({
@@ -10,4 +10,8 @@ import { Todo } from '../todo/todo';
 })
 export class Todos {
   tasks = input<Task[]>([]);
+
+  updateTask(task: Task, updatedStatus: TaskStatus): void {
+    task.status = updatedStatus;
+  }
 }

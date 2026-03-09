@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { TaskStatus } from '../data-access/task';
-import { TodoStatusPipe } from './todo-status-pipe';
+import { TodoStatusPipe } from './todo-status.pipe';
 
 @Component({
   selector: 'app-todo-status',

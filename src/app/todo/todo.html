@@ -4,6 +4,7 @@
   <div class="todo-header">
     <h1>{{ task().title }}</h1>
     <app-todo-status [taskStatus]="task().status" />
+    <button (click)="updateTask($event)">UPDATE</button>
   </div>
   @if (detailsDisplayed) {
     <p>{{ task().description }}</p>
