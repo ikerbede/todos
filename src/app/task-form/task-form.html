@@ -1,0 +1,9 @@
+<form [formRoot]="taskForm" (submit)="onSubmit()">
+  <label for="title">Titre:</label>
+  <input type="text" id="title" [formField]="taskForm.title" />
+
+  <label for="description">Description:</label>
+  <textarea id="description" [formField]="taskForm.description"></textarea>
+
+  <button type="submit">Save</button>
+</form>
